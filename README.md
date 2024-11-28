@@ -12,6 +12,7 @@ Número desejado = 4
 Meio = 2
 -elimina toda esquerda
 4 foi eliminado.
+  
 **2.	 Identifique casos em que o Interpolation Search é mais eficiente que o Binary Search.**
   O Interpolation Search é mais eficiente em listas com intervalos uniformes, porque ele faz uma suposição sobre onde o número desejado pode estar.
   

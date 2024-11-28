@@ -16,6 +16,10 @@ Meio = 2
 # **2.	 Identifique casos em que o Interpolation Search é mais eficiente que o Binary Search.**
   O Interpolation Search é mais eficiente em listas com intervalos uniformes, porque ele faz uma suposição sobre onde o número desejado pode estar.
 
-# **4.	Explique como ele combina elementos do Jump Search e Binary Search.**
+# **3.	Explique como ele combina elementos do Jump Search e Binary Search.**
 O Exponential Search combina o Jump Search e o Binary Search porque ele começa pulando intervalos em potências de 2 e, quando encontra o intervalo em que o número pode estar, aplica o Binary Search para localizar o elemento exato.
-  
+
+# **4.	Analise o desempenho do Exponential Search em listas muito grandes e pequenas.**
+•	Listas pequenas: O overhead do Exponential Search pode torná-lo mais lento que o Binary Search.
+•	Listas grandes: Ele é eficiente para encontrar rapidamente o intervalo onde o valor pode estar, especialmente útil em listas parcialmente indexadas ou dispersas.
+

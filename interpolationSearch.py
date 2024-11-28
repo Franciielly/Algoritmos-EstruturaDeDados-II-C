@@ -76,9 +76,3 @@ for value in lista_buscar:
         print(f"binary - {value} encontrado no índice: {resultado}")
     else:
         print(f"binary - {value} não encontrado")
-
-"""
-- Identifique casos em que o Interpolation Search é mais eficiente que o Binary Search.
-
-O interpolation Search é mais eficiente que o binary search em listas grandes, ordenadas e com intervalos uniformemente distribuído, por exemplo, em uma lista telefônica organizada em ordem alfabética.
-"""

@@ -43,7 +43,7 @@ A base numérica (como base 10 ou base 2) afeta diretamente o processamento, poi
 - Dividir o espaço de busca em três partes, quando isso se adapta melhor ao problema.
 - Refinar a busca de maneira mais precisa, dividindo o intervalo em três partes.
 
-# **10.  Construa uma tabela comparativa dos tempos de execução de Binary Search, Interpolation Search, Jump Search e Exponential Search em listas de tamanhos diferentes.
+# **10.  Analise a complexidade de tempo e espaço de cada algoritmo de busca e ordenação listados.
 ### Tabela de Complexidade dos Algoritmos de Busca e Ordenação
 
 | **Algoritmo**          | **Melhor Caso (Tempo)** | **Caso Médio (Tempo)** | **Pior Caso (Tempo)** | **Complexidade de Espaço** |

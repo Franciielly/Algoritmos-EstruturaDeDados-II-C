@@ -9,7 +9,7 @@ A lista precisa estar ordenada, pois o Binary Search elimina um lado. Se o núme
      meio = 4
      Elemento encontrado!
      
-Ex  : [4,1,2,3,4] – lista desordenada
+### Ex  : [4,1,2,3,4] – lista desordenada
      Número desejado = 4
      Meio = 2
      elimina toda esquerda

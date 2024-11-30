@@ -39,3 +39,499 @@ A base numérica (como base 10 ou base 2) afeta diretamente o processamento, poi
 - Encontrar o máximo ou mínimo de uma função unimodal (crescente até um ponto e depois decrescente, ou o contrário).
 - Dividir o espaço de busca em três partes, quando isso se adapta melhor ao problema.
 - Refinar a busca de maneira mais precisa, dividindo o intervalo em três partes.
+
+
+Aqui está uma análise detalhada da complexidade de tempo e espaço dos algoritmos de busca e ordenação listados no seu código:
+
+1. Shell Sort
+Complexidade de Tempo:
+Melhor caso: 
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn) (depende do gap sequence, com sequências otimizadas como Hibbard ou Knuth).
+Médio caso: 
+𝑂
+(
+𝑛
+3
+/
+2
+)
+O(n 
+3/2
+ ) (usando gap sequences típicas).
+Pior caso: 
+𝑂
+(
+𝑛
+2
+)
+O(n 
+2
+ ) (para gap sequence ineficiente, como divisão por 2).
+Complexidade de Espaço:
+Espaço adicional: 
+𝑂
+(
+1
+)
+O(1) (in-place, usa trocas diretas na lista).
+2. Merge Sort
+Complexidade de Tempo:
+Melhor caso: 
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn) (independente da ordem dos elementos).
+Médio caso: 
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn).
+Pior caso: 
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn).
+Complexidade de Espaço:
+Espaço adicional: 
+𝑂
+(
+𝑛
+)
+O(n) (necessário para arrays auxiliares na fusão).
+3. Quick Sort
+Complexidade de Tempo:
+Melhor caso: 
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn) (quando o pivô divide uniformemente os subarrays).
+Médio caso: 
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn).
+Pior caso: 
+𝑂
+(
+𝑛
+2
+)
+O(n 
+2
+ ) (ocorre quando o pivô é o menor ou maior elemento, criando partições desbalanceadas).
+Complexidade de Espaço:
+Espaço adicional:
+𝑂
+(
+log
+⁡
+𝑛
+)
+O(logn) (para a pilha de recursão, em média).
+𝑂
+(
+𝑛
+)
+O(n) (no pior caso, em recursão desbalanceada).
+4. Bucket Sort
+Complexidade de Tempo:
+Melhor caso: 
+𝑂
+(
+𝑛
++
+𝑘
+)
+O(n+k), onde 
+𝑘
+k é o número de baldes.
+Médio caso: 
+𝑂
+(
+𝑛
++
+𝑘
+)
+O(n+k).
+Pior caso: 
+𝑂
+(
+𝑛
+2
+)
+O(n 
+2
+ ) (se todos os elementos forem mapeados para o mesmo balde e precisar de uma ordenação interna).
+Complexidade de Espaço:
+Espaço adicional: 
+𝑂
+(
+𝑛
++
+𝑘
+)
+O(n+k) (espaço para os baldes).
+5. Radix Sort
+Complexidade de Tempo:
+Melhor caso: 
+𝑂
+(
+𝑑
+⋅
+(
+𝑛
++
+𝑏
+)
+)
+O(d⋅(n+b)), onde:
+𝑑
+d é o número de dígitos no maior número.
+𝑏
+b é a base (ex.: 10 para números decimais).
+Médio caso: 
+𝑂
+(
+𝑑
+⋅
+(
+𝑛
++
+𝑏
+)
+)
+O(d⋅(n+b)).
+Pior caso: 
+𝑂
+(
+𝑑
+⋅
+(
+𝑛
++
+𝑏
+)
+)
+O(d⋅(n+b)).
+Complexidade de Espaço:
+Espaço adicional: 
+𝑂
+(
+𝑛
++
+𝑏
+)
+O(n+b) (espaço para os buckets e arrays auxiliares).
+6. Busca Linear (Não implementada, mas relevante)
+Complexidade de Tempo:
+Melhor caso: 
+𝑂
+(
+1
+)
+O(1) (encontrar o elemento na primeira posição).
+Pior caso: 
+𝑂
+(
+𝑛
+)
+O(n) (elemento não encontrado ou na última posição).
+Médio caso: 
+𝑂
+(
+𝑛
+)
+O(n).
+Complexidade de Espaço:
+Espaço adicional: 
+𝑂
+(
+1
+)
+O(1) (não utiliza memória extra).
+7. Busca Binária (Não implementada, mas relevante)
+Complexidade de Tempo:
+Melhor caso: 
+𝑂
+(
+1
+)
+O(1) (encontrar o elemento no meio da lista).
+Médio caso: 
+𝑂
+(
+log
+⁡
+𝑛
+)
+O(logn) (a lista é dividida ao meio em cada iteração).
+Pior caso: 
+𝑂
+(
+log
+⁡
+𝑛
+)
+O(logn).
+Complexidade de Espaço:
+Espaço adicional:
+𝑂
+(
+1
+)
+O(1) (iterativa).
+𝑂
+(
+log
+⁡
+𝑛
+)
+O(logn) (recursiva, devido à pilha de chamadas).
+Comparação Geral
+Algoritmo	Melhor Caso	Médio Caso	Pior Caso	Espaço Adicional
+Shell Sort	
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn)	
+𝑂
+(
+𝑛
+3
+/
+2
+)
+O(n 
+3/2
+ )	
+𝑂
+(
+𝑛
+2
+)
+O(n 
+2
+ )	
+𝑂
+(
+1
+)
+O(1)
+Merge Sort	
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn)	
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn)	
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn)	
+𝑂
+(
+𝑛
+)
+O(n)
+Quick Sort	
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn)	
+𝑂
+(
+𝑛
+log
+⁡
+𝑛
+)
+O(nlogn)	
+𝑂
+(
+𝑛
+2
+)
+O(n 
+2
+ )	
+𝑂
+(
+log
+⁡
+𝑛
+)
+O(logn)
+Bucket Sort	
+𝑂
+(
+𝑛
++
+𝑘
+)
+O(n+k)	
+𝑂
+(
+𝑛
++
+𝑘
+)
+O(n+k)	
+𝑂
+(
+𝑛
+2
+)
+O(n 
+2
+ )	
+𝑂
+(
+𝑛
++
+𝑘
+)
+O(n+k)
+Radix Sort	
+𝑂
+(
+𝑑
+⋅
+(
+𝑛
++
+𝑏
+)
+)
+O(d⋅(n+b))	
+𝑂
+(
+𝑑
+⋅
+(
+𝑛
++
+𝑏
+)
+)
+O(d⋅(n+b))	
+𝑂
+(
+𝑑
+⋅
+(
+𝑛
++
+𝑏
+)
+)
+O(d⋅(n+b))	
+𝑂
+(
+𝑛
++
+𝑏
+)
+O(n+b)
+Busca Linear	
+𝑂
+(
+1
+)
+O(1)	
+𝑂
+(
+𝑛
+)
+O(n)	
+𝑂
+(
+𝑛
+)
+O(n)	
+𝑂
+(
+1
+)
+O(1)
+Busca Binária	
+𝑂
+(
+1
+)
+O(1)	
+𝑂
+(
+log
+⁡
+𝑛
+)
+O(logn)	
+𝑂
+(
+log
+⁡
+𝑛
+)
+O(logn)	
+𝑂
+(
+1
+)
+O(1)/
+𝑂
+(
+log
+⁡
+𝑛
+)
+O(logn)
+

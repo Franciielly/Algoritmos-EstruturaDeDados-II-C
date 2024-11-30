@@ -42,3 +42,20 @@ A base numérica (como base 10 ou base 2) afeta diretamente o processamento, poi
 - Encontrar o máximo ou mínimo de uma função unimodal (crescente até um ponto e depois decrescente, ou o contrário).
 - Dividir o espaço de busca em três partes, quando isso se adapta melhor ao problema.
 - Refinar a busca de maneira mais precisa, dividindo o intervalo em três partes.
+
+# **10.  Construa uma tabela comparativa dos tempos de execução de Binary Search, Interpolation Search, Jump Search e Exponential Search em listas de tamanhos diferentes.
+### Tabela de Complexidade dos Algoritmos de Busca e Ordenação
+
+| **Algoritmo**          | **Melhor Caso (Tempo)** | **Caso Médio (Tempo)** | **Pior Caso (Tempo)** | **Complexidade de Espaço** |
+|------------------------|-------------------------|------------------------|-----------------------|---------------------------|
+| **Binary Search**       | O(1)                    | O(log n)               | O(log n)              | O(1)                      |
+| **Interpolation Search**| O(log log n)            | O(log log n)           | O(n)                  | O(1)                      |
+| **Jump Search**         | O(√n)                   | O(√n)                  | O(√n)                 | O(1)                      |
+| **Exponential Search**  | O(1)                    | O(log n)               | O(log n)              | O(1)                      |
+| **Ternary Search**      | O(1)                    | O(log₃ n)              | O(log₃ n)             | O(1)                      |
+| **Shell Sort**          | O(n log n)              | O(n^1.5)               | O(n²)                 | O(1)                      |
+| **Merge Sort**          | O(n log n)              | O(n log n)             | O(n log n)            | O(n)                      |
+| **Selection Sort**      | O(n²)                   | O(n²)                  | O(n²)                 | O(1)                      |
+| **Bucket Sort**         | O(n + k)                | O(n + k)               | O(n²)                 | O(n + k)                  |
+| **Radix Sort**          | O(nk)                   | O(nk)                  | O(nk)                 | O(n + k)                  |
+| **Quick Sort**          | O(n log n)              | O(n log n)             | O(n²)                 | O(log n)                  |

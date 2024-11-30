@@ -61,11 +61,11 @@ A base numérica (como base 10 ou base 2) afeta diretamente o processamento, poi
 | **Quick Sort**          | O(n log n)              | O(n log n)             | O(n²)                 | O(log n)                  |
 
 # **11.  Identifique quais algoritmos de ordenação da lista são estáveis e explique o que isso significa. Demonstre com exemplos**
-Merge Sort
-Bubble Sort
-Insertion Sort
-Bucket Sort (quando a ordenação interna é estável)
-Radix Sort
+Merge Sort,
+Bubble Sort,
+Insertion Sort,
+Bucket Sort,
+Radix Sort.
 
 # Exemplos de Estabilidade nos Algoritmos de Ordenação:
 ### Merge Sort (Estável)
@@ -81,3 +81,7 @@ Entrada: [(2, 'd'), (3, 'b'), (4, 'c'), (4, 'a')]
 Após a ordenação: [(2, 'd'), (3, 'b'), (4, 'c'), (4, 'a')]
 Explicação: A ordem dos elementos 4 foi invertida, e 'c' veio antes de 'a', o que mostra que a estabilidade não foi preservada.
 Estabilidade não mantida.
+
+# ***12. Crie gráficos para ilustrar como os algoritmos de ordenação (Merge Sort, Quick Sort, Selection Sort) reorganizam os elementos a cada etapa.***   
+
+![image](https://github.com/user-attachments/assets/f6893d33-3fe2-46ba-85f9-44edb2f0311f)

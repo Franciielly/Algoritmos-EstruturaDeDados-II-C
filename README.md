@@ -72,17 +72,17 @@ A base numérica (como base 10 ou base 2) afeta diretamente o processamento, poi
 4.	Bucket Sort (quando a ordenação interna é estável)
 5.	Radix Sort
    
-Algoritmo Estável: Merge Sort
+## Algoritmo Estável: Merge Sort
 O Merge Sort é estável, o que significa que preserva a ordem dos elementos iguais.
 
-Exemplo:
+### Exemplo:
 Antes: (4, 'a'), (4, 'c')
 Depois: (4, 'a'), (4, 'c') (ordem preservada)
 
-Algoritmo Não Estável: Selection Sort
+## Algoritmo Não Estável: Selection Sort
 O Selection Sort é não estável, podendo alterar a ordem de elementos iguais.
 
-Exemplo:
+### Exemplo:
 Antes: (4, 'a'), (4, 'c')
 Depois: (4, 'c'), (4, 'a') (ordem alterada)
 

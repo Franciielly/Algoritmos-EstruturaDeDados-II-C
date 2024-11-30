@@ -43,7 +43,7 @@ A base numérica (como base 10 ou base 2) afeta diretamente o processamento, poi
 - Dividir o espaço de busca em três partes, quando isso se adapta melhor ao problema.
 - Refinar a busca de maneira mais precisa, dividindo o intervalo em três partes.
 
-# **10.  Analise a complexidade de tempo e espaço de cada algoritmo de busca e ordenação listados.
+# **10.  Analise a complexidade de tempo e espaço de cada algoritmo de busca e ordenação listados.**
 ### Tabela de Complexidade dos Algoritmos de Busca e Ordenação
 
 | **Algoritmo**          | **Melhor Caso (Tempo)** | **Caso Médio (Tempo)** | **Pior Caso (Tempo)** | **Complexidade de Espaço** |
@@ -59,3 +59,25 @@ A base numérica (como base 10 ou base 2) afeta diretamente o processamento, poi
 | **Bucket Sort**         | O(n + k)                | O(n + k)               | O(n²)                 | O(n + k)                  |
 | **Radix Sort**          | O(nk)                   | O(nk)                  | O(nk)                 | O(n + k)                  |
 | **Quick Sort**          | O(n log n)              | O(n log n)             | O(n²)                 | O(log n)                  |
+
+# **11.  Identifique quais algoritmos de ordenação da lista são estáveis e explique o que isso significa. Demonstre com exemplos**
+Merge Sort
+Bubble Sort
+Insertion Sort
+Bucket Sort (quando a ordenação interna é estável)
+Radix Sort
+
+# Exemplos de Estabilidade nos Algoritmos de Ordenação:
+### Merge Sort (Estável)
+Exemplo:
+Entrada: [(2, 'd'), (3, 'b'), (4, 'a'), (4, 'c')]
+Após a ordenação: [(2, 'd'), (3, 'b'), (4, 'a'), (4, 'c')]
+Explicação: A ordem dos pares com o número 4 não foi alterada, ou seja, 'a' vem antes de 'c', que é a ordem original.
+Estabilidade mantida.
+
+### Selection Sort (Não Estável)
+Exemplo:
+Entrada: [(2, 'd'), (3, 'b'), (4, 'c'), (4, 'a')]
+Após a ordenação: [(2, 'd'), (3, 'b'), (4, 'c'), (4, 'a')]
+Explicação: A ordem dos elementos 4 foi invertida, e 'c' veio antes de 'a', o que mostra que a estabilidade não foi preservada.
+Estabilidade não mantida.

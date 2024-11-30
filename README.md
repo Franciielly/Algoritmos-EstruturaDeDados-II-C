@@ -39,3 +39,4 @@ A base numérica (como base 10 ou base 2) afeta diretamente o processamento, poi
 - Encontrar o máximo ou mínimo de uma função unimodal (crescente até um ponto e depois decrescente, ou o contrário).
 - Dividir o espaço de busca em três partes, quando isso se adapta melhor ao problema.
 - Refinar a busca de maneira mais precisa, dividindo o intervalo em três partes.
+

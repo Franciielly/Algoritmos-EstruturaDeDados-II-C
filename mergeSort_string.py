@@ -3,7 +3,7 @@
 - Modifique o Merge Sort para ordenar strings em ordem alfabética.
 """
 
-from mergeSort import*
+from mergeSort import merge_sort
 
 palavras = []
 while True: 

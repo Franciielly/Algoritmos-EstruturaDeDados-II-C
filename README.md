@@ -23,6 +23,7 @@ O Exponential Search combina o Jump Search e o Binary Search porque ele começa 
 
 # **4.	Analise o desempenho do Exponential Search em listas muito grandes e pequenas.**
 •	Listas pequenas: O overhead do Exponential Search pode torná-lo mais lento que o Binary Search.
+
 •	Listas grandes: Ele é eficiente para encontrar rapidamente o intervalo onde o valor pode estar, especialmente útil em listas parcialmente indexadas ou dispersas.
 
 # **5.	Explique como a escolha da sequência de intervalos afeta a eficiência do algoritmo. (shell sort)**

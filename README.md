@@ -23,3 +23,19 @@ O Exponential Search combina o Jump Search e o Binary Search porque ele começa 
 •	Listas pequenas: O overhead do Exponential Search pode torná-lo mais lento que o Binary Search.
 •	Listas grandes: Ele é eficiente para encontrar rapidamente o intervalo onde o valor pode estar, especialmente útil em listas parcialmente indexadas ou dispersas.
 
+# **5.	Explique como a escolha da sequência de intervalos afeta a eficiência do algoritmo. (shell sort)**
+A determinação da sequência é crucial para definir a eficiência do algoritmo. Dependendo do intervalo utilizado, o algoritmo pode precisar fazer mais ou menos comparações.
+
+# **6.  Explique o conceito de "dividir para conquistar" usado nesse algoritmo. (merge sort)**
+"Dividir para conquistar" significa que o algoritmo divide o problema em subproblemas menores, que são resolvidos de forma recursiva, e depois as soluções são combinadas para formar a solução do problema original.
+
+# **7.	Explique como os "baldes" são preenchidos e ordenados.**
+No Bucket Sort, os elementos são divididos em subintervalos (baldes) para facilitar a ordenação. Após os baldes serem preenchidos, eles precisam de um algoritmo de ordenação interno para ordenar os elementos dentro de cada balde. Após, a ordenação os baldes são concatenados para exibir o resultado.
+
+# **8.  Explique como o algoritmo lida com bases diferentes (ex.: base 10 e base 2). (radix sort)**
+A base numérica (como base 10 ou base 2) afeta diretamente o processamento, pois, em base 10, a ordenação é feita dígito por dígito, enquanto em base 2, a ordenação é feita bit por bit, começando do dígito ou bit menos significativo até o mais significativo.
+
+# **9.  Identifique situações em que o Ternary Search seria mais eficiente que o Binary Search.**
+- Encontrar o máximo ou mínimo de uma função unimodal (crescente até um ponto e depois decrescente, ou o contrário).
+- Dividir o espaço de busca em três partes, quando isso se adapta melhor ao problema.
+- Refinar a busca de maneira mais precisa, dividindo o intervalo em três partes.

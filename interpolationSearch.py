@@ -25,54 +25,57 @@ def interpolation_search(lista, elemento):
         else: 
             inicio = meio - 1
     return -1
+    
+if __name__ == "__main__":
 
-lista_nao_uniforme = []
-print("Digite números com intervalos não uniforme(ou digite 'sair' para encerrar) ")
-while True:
-    numero = input("Número: ")
-    if numero.lower() == "sair":
-        break
-    if numero.isdigit():
-        lista_nao_uniforme.append(int(numero))
-    else:
-        print("Por favor, digite número válido ou 'sair' para encerrar")
+    lista_nao_uniforme = []
 
-lista_nao_uniforme.sort()
-lista_uniforme = [i * 5 for i in range(1,50)] 
+    print("Digite números com intervalos não uniforme(ou digite 'sair' para encerrar) ")
+    while True:
+        numero = input("Número: ")
+        if numero.lower() == "sair":
+            break
+        if numero.isdigit():
+            lista_nao_uniforme.append(int(numero))
+        else:
+            print("Por favor, digite número válido ou 'sair' para encerrar")
 
-i = int(input("Digite quantos números deseja buscar: "))
+    lista_nao_uniforme.sort()
+    lista_uniforme = [i * 5 for i in range(1,50)] 
 
-lista_buscar =[]
+    i = int(input("Digite quantos números deseja buscar: "))
 
-for n in range(i):
-    elemento = input("número: ")
-    if elemento.isdigit():
-        lista_buscar.append(int(elemento))
-    else:
-        print("Digite apenas número")
+    lista_buscar =[]
 
-print("\nLista com intervalos uniformes\n")
-for value in lista_buscar:
-    resultado = interpolation_search(lista_uniforme, value)
-    if resultado != -1:
-        print(f"Interpolation - {value} encontrado no índice: {resultado}")
-    else:
-        print(f"Interpolation - {value} não encontrado")
-    resultado = binary_search(lista_uniforme, value)
-    if resultado != -1:
-        print(f"binary - {value} encontrado no índice: {resultado}")
-    else:
-        print(f"binary - {value} não encontrado")
+    for n in range(i):
+        elemento = input("número: ")
+        if elemento.isdigit():
+            lista_buscar.append(int(elemento))
+        else:
+            print("Digite apenas número")
 
-print("\nlista com intervalos não uniformes\n")
-for value in lista_buscar:
-    resultado = interpolation_search(lista_nao_uniforme, value)
-    if resultado != -1:
-        print(f"Interpolation - {value} encontrado no índice: {resultado}")
-    else:
-        print(f"Interpolation - {value} não encontrado")
-    resultado = binary_search(lista_nao_uniforme, value)
-    if resultado != -1:
-        print(f"binary - {value} encontrado no índice: {resultado}")
-    else:
-        print(f"binary - {value} não encontrado")
+    print("\nLista com intervalos uniformes\n")
+    for value in lista_buscar:
+        resultado = interpolation_search(lista_uniforme, value)
+        if resultado != -1:
+            print(f"Interpolation - {value} encontrado no índice: {resultado}")
+        else:
+            print(f"Interpolation - {value} não encontrado")
+        resultado = binary_search(lista_uniforme, value)
+        if resultado != -1:
+            print(f"binary - {value} encontrado no índice: {resultado}")
+        else:
+            print(f"binary - {value} não encontrado")
+
+    print("\nlista com intervalos não uniformes\n")
+    for value in lista_buscar:
+        resultado = interpolation_search(lista_nao_uniforme, value)
+        if resultado != -1:
+            print(f"Interpolation - {value} encontrado no índice: {resultado}")
+        else:
+            print(f"Interpolation - {value} não encontrado")
+        resultado = binary_search(lista_nao_uniforme, value)
+        if resultado != -1:
+            print(f"binary - {value} encontrado no índice: {resultado}")
+        else:
+            print(f"binary - {value} não encontrado")

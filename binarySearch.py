@@ -21,7 +21,6 @@ def binary_search(lista, elemento):
 
     return -1
 
-
 if __name__ == "__main__":
     lista = []
     print("Digite o número da lista um por vez(ou digite 'sair' para encerrar) ")

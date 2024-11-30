@@ -8,11 +8,9 @@ import random
 from jumpSearch import*
 from binarySearch import*
 
-
 def comparar_algoritmos(lista):
     valor = random.choice(lista)  
 
-   
     start_time = time.time()
     jump_search(lista, valor)
     jump_duration = time.time() - start_time
@@ -22,7 +20,6 @@ def comparar_algoritmos(lista):
     binary_duration = time.time() - start_time
 
     return jump_duration, binary_duration
-
 
 tamanhos = [10, 100, 1000, 10000, 100000]
 resultados = []

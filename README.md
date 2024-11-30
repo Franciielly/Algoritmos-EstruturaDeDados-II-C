@@ -40,19 +40,21 @@ A base numérica (como base 10 ou base 2) afeta diretamente o processamento, poi
 - Dividir o espaço de busca em três partes, quando isso se adapta melhor ao problema.
 - Refinar a busca de maneira mais precisa, dividindo o intervalo em três partes.
 
+# **10.  Analise a complexidade de tempo e espaço de cada algoritmo de busca e ordenação listados.**
+
 ## Análise de Complexidade dos Algoritmos
 
 ### Comparação Geral
 
-| **Algoritmo**        | **Melhor Caso**     | **Médio Caso**     | **Pior Caso**       | **Espaço Adicional** |
-|-----------------------|---------------------|---------------------|---------------------|-----------------------|
-| Shell Sort            | \( O(n \log n) \)  | \( O(n^{3/2}) \)    | \( O(n^2) \)        | \( O(1) \)           |
-| Merge Sort            | \( O(n \log n) \)  | \( O(n \log n) \)   | \( O(n \log n) \)   | \( O(n) \)           |
-| Quick Sort            | \( O(n \log n) \)  | \( O(n \log n) \)   | \( O(n^2) \)        | \( O(\log n) \)      |
-| Bucket Sort           | \( O(n + k) \)     | \( O(n + k) \)      | \( O(n^2) \)        | \( O(n + k) \)       |
-| Radix Sort            | \( O(d \cdot (n + b)) \) | \( O(d \cdot (n + b)) \) | \( O(d \cdot (n + b)) \) | \( O(n + b) \) |
-| Busca Linear          | \( O(1) \)         | \( O(n) \)          | \( O(n) \)          | \( O(1) \)           |
-| Busca Binária         | \( O(1) \)         | \( O(\log n) \)     | \( O(\log n) \)     | \( O(1) \)/\(O(\log n)\) |
+| Algoritmo        | Melhor Caso  | Médio Caso    | Pior Caso     | Espaço Adicional |
+|-------------------|--------------|---------------|---------------|-------------------|
+| Shell Sort        | O(n log n)  | O(n^(3/2))    | O(n^2)        | O(1)             |
+| Merge Sort        | O(n log n)  | O(n log n)    | O(n log n)    | O(n)             |
+| Quick Sort        | O(n log n)  | O(n log n)    | O(n^2)        | O(log n)         |
+| Bucket Sort       | O(n + k)    | O(n + k)      | O(n^2)        | O(n + k)         |
+| Radix Sort        | O(d * (n+b))| O(d * (n+b))  | O(d * (n+b))  | O(n + b)         |
+| Busca Linear      | O(1)        | O(n)          | O(n)          | O(1)             |
+| Busca Binária     | O(1)        | O(log n)      | O(log n)      | O(1) / O(log n)  |
 
 ### Observação
 - \( n \): número de elementos na lista.

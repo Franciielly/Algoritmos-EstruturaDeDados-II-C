@@ -86,3 +86,7 @@ O Selection Sort é não estável, podendo alterar a ordem de elementos iguais.
 Antes: (4, 'a'), (4, 'c')
 Depois: (4, 'c'), (4, 'a') (ordem alterada)
 
+# **19.  Crie gráficos para ilustrar como os algoritmos de ordenação (Merge Sort, Quick Sort, Selection Sort) reorganizam os elementos a cada etapa.**
+![image](https://github.com/user-attachments/assets/cc832012-2c4b-482c-8b58-a3320e493f7e)
+
+

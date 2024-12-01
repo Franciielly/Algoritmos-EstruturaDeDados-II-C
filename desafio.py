@@ -1,3 +1,8 @@
+"""
+20. Desafios de Implementação
+    - Crie um programa que permita ao usuário escolher um algoritmo de busca e ordenação para ordenar uma lista ou procurar um elemento, oferecendo comparações automáticas entre os métodos.
+"""
+
 import time
 from binarySearch import binary_search
 from jumpSearch import jump_search
